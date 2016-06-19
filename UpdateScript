@@ -19,7 +19,7 @@ fi
 ## test if cygwin
 if [ -f /etc/defaults/etc/cygserver.conf ]
 then
-	## Run the Debian version of the update command
+	## Run the cygwin version of the update command
 	apt-cyg update
 fi
 	
