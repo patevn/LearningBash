@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Please Enter Your Name:"
+read yourName
+echo "You Entered:" $yourName

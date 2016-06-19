@@ -1,0 +1,25 @@
+#!/bin/bash 
+
+cd /etc
+
+## Test if the local host in Arch-based
+if [ -d /etc/pacman.d ]
+then
+	##run the arch version of the update
+	sudo pacman -Syu
+fi
+
+## test if its debian based
+if [ -d /etc/apt ]
+then
+	## Run the Debian version of the update command
+	sudo apt-get update && sudo apt-get dist-upgrade
+fi
+
+## test if cygwin
+if [ -f /etc/defaults/etc/cygserver.conf ]
+then
+	## Run the Debian version of the update command
+	apt-cyg update
+fi
+	
