@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "What is your favorite ninja turtle?"
+
+echo "1 - Raphael"
+echo "2 - Donatello"
+echo "3 - Michaelangelo"
+echo "4 - Leo"
+
+##read in input from keyboard
+read turtle;
+
+case $turtle in 
+	1) echo "Raphael is cool, but rude";;
+	2) echo "Donatello  is wise";;
+	3) echo "Michaelangello like to party";;
+	4) echo "Leo is a leader";;
+	## if the user puts something outside of 1-4
+	*) echo  "not an option!";;
+esac
+
+  
+
